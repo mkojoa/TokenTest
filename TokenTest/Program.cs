@@ -38,15 +38,15 @@ namespace TokenTest
 
             //string redirectUri = string.Format($"http://127.0.0.1:{5000}");
             //string redirectUri = string.Format($"com.persol.hcm_mobile:/oauthredirect");
-            string redirectUri = string.Format($" com.persol.identitytest:/oauth2callback");
+            string redirectUri = string.Format($"http://psl-app-vm3/persol-hcm?qryparam=acc001");
 
             var options = new OidcClientOptions
             {
-                Authority = "https://demo.persol-apps.com/PersolAuthService",
+                Authority = "https://localhost:44318",
 
-                ClientId = "globalapicodeflow", // "console.pkce", hcmmobilecodeflow
+                ClientId = "angular_code_client", // "console.pkce", hcmmobilecodeflow
                 RedirectUri = redirectUri,
-                Scope = "profile openid email payrollapi globalapi hcmmanagerapi",
+                Scope = "profile openid email", // payrollapi globalapi hcmmanagerapi",
                 FilterClaims = false,
                 Browser = browser,
                 Policy = new Policy
