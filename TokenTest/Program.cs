@@ -38,7 +38,7 @@ namespace TokenTest
 
             //string redirectUri = string.Format($"http://127.0.0.1:{5000}");
             //string redirectUri = string.Format($"com.persol.hcm_mobile:/oauthredirect");
-            string redirectUri = string.Format($"http://psl-app-vm3/persol-hcm?qryparam=acc001");
+            string redirectUri = string.Format($"http://psl-app-vm3/persol-hcm?qryparam=1AEC6ADD-14FE-4427-98F5-32E00B7E72B1");// ($"http://psl-app-vm3/persol-hcm?qryparam=acc001");
 
             var options = new OidcClientOptions
             {
